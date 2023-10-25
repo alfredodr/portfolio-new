@@ -16,6 +16,7 @@ const config: Config = {
       },
       fontFamily: {
         saira: ["var(--font-saira)"],
+        nunito: ["var(--font-nunito)"],
       },
     },
   },

@@ -13,3 +13,7 @@
     @apply text-lg;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
