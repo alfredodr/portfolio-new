@@ -66,22 +66,25 @@ const Header = () => {
         className={cn("bg-transparent", { "bg-[#171a1d]": blackBackground })}
       >
         <div className="max-w-[76rem] min-h-[5.6748125rem] px-8 mx-auto flex justify-between items-center">
-          <div className="flex flex-col justify-center items-center whitespace-nowrap">
-            <div className="flex items-center">
-              <FaMinus color="#9E1030" />
+          <Link href={"/"} aria-label="home">
+            <div className="flex flex-col justify-center items-center whitespace-nowrap">
+              <div className="flex items-center">
+                <FaMinus color="#9E1030" />
+                <span
+                  className={`text-2xl text-[#fff] font-semibold ${saira.variable} font-saira`}
+                >
+                  Alfredo
+                </span>
+                <FaMinus color="#9E1030" />
+              </div>
               <span
-                className={`text-2xl text-[#fff] font-semibold ${saira.variable} font-saira`}
+                className={`text-base text-[#fff] ${nunito.variable} font-nunito font-semibold`}
               >
-                Alfredo
+                Web Developer
               </span>
-              <FaMinus color="#9E1030" />
             </div>
-            <span
-              className={`text-base text-[#fff] ${nunito.variable} font-nunito font-semibold`}
-            >
-              Web Developer
-            </span>
-          </div>
+          </Link>
+
           {/* Desktop Menu */}
           <nav className="hidden lg:block">
             <ul className="flex flex-col md:flex-row m-0 p-0 list-none gap-0 md:gap-16 justify-center md:justify-center items-center">
