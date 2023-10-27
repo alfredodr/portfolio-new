@@ -62,10 +62,13 @@ const Header = () => {
 
   return (
     <header className="z-20 fixed left-0 right-0 top-0 transition ease-in-out delay-150 duration-500 lg:bg-transparent">
-      <div
-        className={cn("bg-transparent", { "bg-[#171a1d]": blackBackground })}
-      >
-        <div className="max-w-[76rem] min-h-[5.6748125rem] px-8 mx-auto flex justify-between items-center">
+      <div className="relative group">
+        <div
+          className={cn(
+            "bg-[#171a1d] lg:bg-transparent max-w-[76rem] min-h-[5.6748125rem] px-8 mx-auto flex justify-between items-center",
+            { "bg-[#171a1d]": blackBackground }
+          )}
+        >
           <Link href={"/"} aria-label="home">
             <div className="flex flex-col justify-center items-center whitespace-nowrap">
               <div className="flex items-center">
@@ -182,100 +185,122 @@ const Header = () => {
             <FiMenu />
           </button>
         </div>
-      </div>
-      <div className={"w-full lg:hidden"}>
-        <ul className="flex flex-col justify-start items-center">
-          <li
+
+        {/* Mobile Menu */}
+        <nav className="w-full lg:hidden">
+          <ul
             className={cn(
-              "text-sm font-semibold text-[#fff] border-y border-[#ffffff1a] border-t-transparent w-full py-3 bg-[#171a1d] px-8 transition-opacity",
-              { "opacity-100 delay-7": isActive },
-              { "opacity-0  delay-700": !isActive }
+              "flex flex-col justify-start items-center",
+              { "opacity-100 visible": isActive },
+              {
+                "invisible delay-1000 absolute top-full w-full": !isActive,
+              }
             )}
           >
-            <Link
-              href={"#section-top"}
-              onClick={toggleMobileMenu}
-              aria-label="scroll to section top"
+            <li
+              className={cn(
+                "text-sm font-semibold text-[#fff] border-y border-[#ffffff1a] border-t-transparent w-full py-3 bg-[#171a1d] px-8 transition-opacity",
+                { "opacity-100": isActive },
+                {
+                  "opacity-0 delay-[450ms]": !isActive,
+                }
+              )}
             >
-              Home
-            </Link>
-          </li>
-          <li
-            className={cn(
-              "text-sm font-semibold text-[#fff] border-y border-[#ffffff1a] border-t-transparent w-full whitespace-nowrap py-3 opacity-0 transition-opacity bg-[#171a1d] px-8",
-              { "opacity-100 delay-100": isActive },
-              { "opacity-0  delay-500 ": !isActive }
-            )}
-          >
-            <Link
-              href={"#section-about"}
-              onClick={toggleMobileMenu}
-              aria-label="scroll to section about"
+              <Link
+                href={"#section-top"}
+                onClick={toggleMobileMenu}
+                aria-label="scroll to section top"
+              >
+                Home
+              </Link>
+            </li>
+            <li
+              className={cn(
+                "text-sm font-semibold text-[#fff] border-y border-[#ffffff1a] border-t-transparent w-full whitespace-nowrap px-8 py-3 bg-[#171a1d] transition-opacity",
+                { "opacity-100 delay-100": isActive },
+                {
+                  "opacity-0 delay-[400ms]": !isActive,
+                }
+              )}
             >
-              About me
-            </Link>
-          </li>
-          <li
-            className={cn(
-              "text-sm font-semibold text-[#fff] border-y border-[#ffffff1a] border-t-transparent w-full whitespace-nowrap py-3 opacity-0 transition-opacity bg-[#171a1d] px-8",
-              { "opacity-100 delay-150": isActive },
-              { "opacity-0  delay-300 ": !isActive }
-            )}
-          >
-            <Link
-              href={"#section-services"}
-              onClick={toggleMobileMenu}
-              aria-label="scroll to section services"
+              <Link
+                href={"#section-about"}
+                onClick={toggleMobileMenu}
+                aria-label="scroll to section about"
+              >
+                About me
+              </Link>
+            </li>
+            <li
+              className={cn(
+                "text-sm font-semibold text-[#fff] border-y border-[#ffffff1a] border-t-transparent w-full whitespace-nowrap px-8 py-3 bg-[#171a1d] transition-opacity",
+                { "opacity-100 delay-150": isActive },
+                {
+                  "opacity-0 delay-300 ": !isActive,
+                }
+              )}
             >
-              What I do
-            </Link>
-          </li>
-          <li
-            className={cn(
-              "text-sm font-semibold text-[#fff] border-y border-[#ffffff1a] border-t-transparent w-full whitespace-nowrap py-3 opacity-0 transition-opacity bg-[#171a1d] px-8",
-              { "opacity-100 delay-200": isActive },
-              { "opacity-0  delay-200 ": !isActive }
-            )}
-          >
-            <Link
-              href={"#section-portfolio"}
-              onClick={toggleMobileMenu}
-              aria-label="scroll to section porftolio"
+              <Link
+                href={"#section-services"}
+                onClick={toggleMobileMenu}
+                aria-label="scroll to section services"
+              >
+                What I do
+              </Link>
+            </li>
+            <li
+              className={cn(
+                "text-sm font-semibold text-[#fff] border-y border-[#ffffff1a] border-t-transparent w-full whitespace-nowrap px-8 py-3 bg-[#171a1d] transition-opacity",
+                { "opacity-100 delay-200": isActive },
+                {
+                  "opacity-0 delay-200 ": !isActive,
+                }
+              )}
             >
-              Portfolio
-            </Link>
-          </li>
-          <li
-            className={cn(
-              "text-sm font-semibold text-[#fff] border-y border-[#ffffff1a] border-t-transparent w-full whitespace-nowrap py-3 opacity-0 transition-opacity bg-[#171a1d] px-8",
-              { "opacity-100 delay-300": isActive },
-              { "opacity-0  delay-150 ": !isActive }
-            )}
-          >
-            <Link
-              href={"#section-resume"}
-              onClick={toggleMobileMenu}
-              aria-label="scroll to section resume"
+              <Link
+                href={"#section-portfolio"}
+                onClick={toggleMobileMenu}
+                aria-label="scroll to section porftolio"
+              >
+                Portfolio
+              </Link>
+            </li>
+            <li
+              className={cn(
+                "text-sm font-semibold text-[#fff] border-y border-[#ffffff1a] border-t-transparent w-full whitespace-nowrap px-8 py-3 bg-[#171a1d] transition-opacity",
+                { "opacity-100 delay-300": isActive },
+                {
+                  "opacity-0 delay-150 ": !isActive,
+                }
+              )}
             >
-              My Resume
-            </Link>
-          </li>
-          <li
-            className={cn(
-              "text-sm font-semibold text-[#fff] border-y border-[#ffffff1a] border-t-transparent w-full whitespace-nowrap py-3 opacity-0 transition-opacity bg-[#171a1d] px-8",
-              { "opacity-100 delay-500": isActive },
-              { "opacity-0  delay-100 ": !isActive }
-            )}
-          >
-            <Link
-              href={"#section-contact"}
-              onClick={toggleMobileMenu}
-              aria-label="scroll to section contact me"
+              <Link
+                href={"#section-resume"}
+                onClick={toggleMobileMenu}
+                aria-label="scroll to section resume"
+              >
+                My Resume
+              </Link>
+            </li>
+            <li
+              className={cn(
+                "text-sm font-semibold text-[#fff] border-y border-[#ffffff1a] border-t-transparent w-full whitespace-nowrap px-8 py-3 bg-[#171a1d] transition-opacity",
+                { "opacity-100 delay-500": isActive },
+                {
+                  "opacity-0 delay-100 ": !isActive,
+                }
+              )}
             >
-              Contact Me
-            </Link>
-          </li>
-        </ul>
+              <Link
+                href={"#section-contact"}
+                onClick={toggleMobileMenu}
+                aria-label="scroll to section contact me"
+              >
+                Contact Me
+              </Link>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
   );
