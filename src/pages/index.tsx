@@ -1,7 +1,9 @@
+import Hero from "@/components/home/Hero";
+
 const Home = () => {
   return (
     <>
-      <section id="section-top" className="h-screen bg-zinc-700"></section>
+      <Hero />
       <section id="section-about" className="h-[67rem] bg-slate-600"></section>
       <section
         id="section-services"

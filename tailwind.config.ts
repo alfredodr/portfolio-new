@@ -19,6 +19,16 @@ const config: Config = {
         saira: ["var(--font-saira)"],
         nunito: ["var(--font-nunito)"],
       },
+
+      keyframes: {
+        scroll_mouse: {
+          "0%": { transform: "translateY(0)" },
+          "100%": { transform: "translateY(15px)" },
+        },
+      },
+      animation: {
+        scroll_mouse: "scroll_mouse 1s infinite",
+      },
     },
   },
   plugins: [],
