@@ -23,6 +23,7 @@ const Header = () => {
   const [blackBackground, setblackBackground] = useState<boolean>(false);
   const [isActive, setActive] = useState<boolean>(false);
   const [currentSection, setCurrentSection] = useState<string>("");
+  console.log("blackBackground:", blackBackground);
 
   const listenToScroll = () => {
     const winScroll =
@@ -65,8 +66,9 @@ const Header = () => {
       <div className="relative group">
         <div
           className={cn(
-            "bg-[#171a1d] lg:bg-transparent max-w-[76rem] min-h-[5.6748125rem] px-8 mx-auto flex justify-between items-center",
-            { "bg-[#171a1d]": blackBackground }
+            "max-w-[76rem] min-h-[5.6748125rem] px-8 mx-auto flex justify-between items-center",
+            { "bg-[#171a1d]": blackBackground },
+            { "bg-transparent": !blackBackground }
           )}
         >
           <Link href={"/"} aria-label="home">
