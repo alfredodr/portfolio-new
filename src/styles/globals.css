@@ -17,3 +17,11 @@
 html {
   scroll-behavior: smooth;
 }
+
+.gradient_bottom {
+  background: linear-gradient(
+    0deg,
+    rgba(23, 26, 29, 1) 0%,
+    rgba(23, 26, 29, 0) 100%
+  );
+}

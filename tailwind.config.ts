@@ -19,7 +19,6 @@ const config: Config = {
         saira: ["var(--font-saira)"],
         nunito: ["var(--font-nunito)"],
       },
-
       keyframes: {
         scroll_mouse: {
           "0%": { transform: "translateY(0)" },

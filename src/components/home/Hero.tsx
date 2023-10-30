@@ -23,14 +23,17 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="section-top" className="relative bg-[#191A1C]">
+    <section
+      id="section-top"
+      className="relative bg-[#191A1C] -z-50 overflow-hidden"
+    >
       <div className="max-w-[76rem] min-h-screen px-8 mx-auto flex flex-col justify-center">
         <span className="text-[#cf1f1f] text-base font-bold mb-5 z-10">
           I am Alfredo J Dominguez
         </span>
         <Typewriter />
       </div>
-      <div className="absolute right-0 top-0 w-3/4 md:w-2/4 lg:w-full h-screen">
+      <div className="fixed right-0 top-0 bottom-0 w-3/4 md:w-2/4 lg:w-full h-screen">
         {/* Desktop */}
         <Image
           src={"/alfredo-headshot-1.webp"}
@@ -60,6 +63,7 @@ const Hero = () => {
           </span>
         </div>
       </div>
+      <div className="absolute w-full bottom-0 gradient_bottom h-[30%]"></div>
     </section>
   );
 };
