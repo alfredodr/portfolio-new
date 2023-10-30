@@ -46,7 +46,7 @@ const Typewriter = () => {
   }, [textIndex, charIndex, isDeleting, delay]);
 
   return (
-    <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold z-20">
+    <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold z-10">
       {text}
       <span className={"animate-blink"}>|</span>
     </h1>

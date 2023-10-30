@@ -25,17 +25,27 @@ const Hero = () => {
   return (
     <section id="section-top" className="relative bg-[#191A1C]">
       <div className="max-w-[76rem] min-h-screen px-8 mx-auto flex flex-col justify-center">
-        <span className="text-[#cf1f1f] text-base font-bold mb-5 z-20">
+        <span className="text-[#cf1f1f] text-base font-bold mb-5 z-10">
           I am Alfredo J Dominguez
         </span>
         <Typewriter />
       </div>
-      <div className="absolute right-0 top-0 w-3/4 md:w-2/4 lg:w-4/12 h-screen">
+      <div className="absolute right-0 top-0 w-3/4 md:w-2/4 lg:w-full h-screen">
+        {/* Desktop */}
         <Image
-          src={"/alfredo-headshot.png"}
+          src={"/alfredo-headshot-1.webp"}
           alt={"Alfredo J Dominguez portrait image"}
           fill
           priority
+          className="hidden lg:block"
+        />
+        {/*Mobile*/}
+        <Image
+          src={"/alfredo-headshot.webp"}
+          alt={"Alfredo J Dominguez portrait image"}
+          fill
+          priority
+          className="block lg:hidden"
         />
       </div>
       <div
