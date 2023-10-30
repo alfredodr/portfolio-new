@@ -1,10 +1,11 @@
 import Hero from "@/components/home/Hero";
+import About from "@/components/home/About";
 
 const Home = () => {
   return (
     <>
       <Hero />
-      <section id="section-about" className="h-[67rem] bg-slate-600"></section>
+      <About />
       <section
         id="section-services"
         className="h-[67rem] bg-orange-200"
