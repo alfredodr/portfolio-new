@@ -1,6 +1,7 @@
 import Hero from "@/components/home/Hero";
 import About from "@/components/home/About";
 import Quote from "@/components/home/Quote";
+import Work from "@/components/home/Work";
 
 const Home = () => {
   return (
@@ -8,10 +9,7 @@ const Home = () => {
       <Hero />
       <About />
       <Quote />
-      <section
-        id="section-services"
-        className="h-[67rem] bg-orange-200"
-      ></section>
+      <Work />
       <section
         id="section-portfolio"
         className="h-[67rem] bg-green-50"
