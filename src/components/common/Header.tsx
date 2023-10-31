@@ -23,7 +23,6 @@ const Header = () => {
   const [blackBackground, setblackBackground] = useState<boolean>(false);
   const [isActive, setActive] = useState<boolean>(false);
   const [currentSection, setCurrentSection] = useState<string>("");
-  console.log("blackBackground:", blackBackground);
 
   const listenToScroll = () => {
     const winScroll =
@@ -62,15 +61,15 @@ const Header = () => {
   };
 
   return (
-    <header className="z-20 fixed left-0 right-0 top-0 transition ease-in-out delay-150 duration-500 lg:bg-transparent">
+    <header
+      className={cn(
+        "z-20 fixed left-0 right-0 top-0 transition ease-in-out delay-150 duration-500",
+        { "bg-[#171a1d]": blackBackground },
+        { "bg-transparent": !blackBackground }
+      )}
+    >
       <div className="relative group">
-        <div
-          className={cn(
-            "max-w-[76rem] min-h-[5.6748125rem] px-8 mx-auto flex justify-between items-center",
-            { "bg-[#171a1d]": blackBackground },
-            { "bg-transparent": !blackBackground }
-          )}
-        >
+        <div className="max-w-[76rem] min-h-[5.6748125rem] px-8 mx-auto flex justify-between items-center">
           <Link href={"/"} aria-label="home">
             <div className="flex flex-col justify-center items-center whitespace-nowrap">
               <div className="flex items-center">

@@ -23,37 +23,32 @@ const Hero = () => {
   }, []);
 
   return (
-    <section
-      id="section-top"
-      className="relative bg-[#191A1C] -z-50 overflow-hidden"
-    >
+    <section id="section-top" className="relative bg-[#191A1C] -z-10">
       <div className="max-w-[76rem] min-h-screen px-8 mx-auto flex flex-col justify-center">
         <span className="text-[#cf1f1f] text-base font-bold mb-5 z-10">
           I am Alfredo J Dominguez
         </span>
         <Typewriter />
       </div>
-      <div className="fixed right-0 top-0 bottom-0 w-3/4 md:w-2/4 lg:w-full h-screen">
-        {/* Desktop */}
-        <Image
-          src={"/alfredo-headshot-1.webp"}
-          alt={"Alfredo J Dominguez portrait image"}
-          fill
-          priority
-          className="hidden lg:block"
-        />
-        {/*Mobile*/}
-        <Image
-          src={"/alfredo-headshot.webp"}
-          alt={"Alfredo J Dominguez portrait image"}
-          fill
-          priority
-          className="block lg:hidden"
-        />
-      </div>
+      {/* Desktop */}
+      <Image
+        src={"/alfredo-headshot-1.webp"}
+        alt={"Alfredo J Dominguez portrait image"}
+        fill
+        priority
+        className="hidden lg:block  "
+      />
+      {/*Mobile*/}
+      <Image
+        src={"/alfredo-headshot.webp"}
+        alt={"Alfredo J Dominguez portrait image"}
+        fill
+        priority
+        className="block lg:hidden object-contain"
+      />
       <div
         className={cn(
-          "border-2 border-[#ffffff40] w-5 h-10 absolute bottom-10 left-1/2 rounded-full block",
+          "border-2 border-[#ffffff40] border-solid w-5 h-10 absolute bottom-[5%] left-1/2 rounded-full block z-10",
           { hidden: hideMouse }
         )}
       >

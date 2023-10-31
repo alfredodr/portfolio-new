@@ -25,3 +25,11 @@ html {
     rgba(23, 26, 29, 0) 100%
   );
 }
+
+.gradient_top {
+  background: linear-gradient(
+    180deg,
+    rgba(23, 26, 29, 1) 0%,
+    rgba(23, 26, 29, 0) 100%
+  );
+}

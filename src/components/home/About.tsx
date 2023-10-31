@@ -10,7 +10,7 @@ const nunito = Nunito({
 
 const About = () => {
   return (
-    <section id="section-about" className="h-[67rem] bg-[#191A1C]">
+    <section id="section-about" className="bg-[#191A1C]">
       <div className="max-w-[46rem] px-8 py-20 mx-auto">
         <h2 className="text-center text-4xl text-white font-bold">About Me</h2>
         <div className="text-center mb-10">
@@ -19,7 +19,7 @@ const About = () => {
           <span className="mx-1 text-[#515356]">_____</span>
         </div>
         <p
-          className={`${nunito.variable} font-nunito font-normal text-base text-[#aaaaaa] text-center`}
+          className={`${nunito.variable} font-nunito font-normal text-base sm:text-lg text-[#aaaaaa] text-center`}
         >
           I am a full stack web developer with a keen emphasis on crafting
           exceptional web experiences. My passion lies in mastering the
