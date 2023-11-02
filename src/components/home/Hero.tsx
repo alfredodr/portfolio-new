@@ -36,7 +36,7 @@ const Hero = () => {
         alt={"Alfredo J Dominguez portrait image"}
         fill
         priority
-        className="hidden lg:block  "
+        className="hidden lg:block"
       />
       {/*Mobile*/}
       <Image

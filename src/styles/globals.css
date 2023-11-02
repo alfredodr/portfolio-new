@@ -41,3 +41,16 @@ html {
     rgba(255, 255, 255, 0) 100%
   );
 }
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cf1f1f;
+  border-radius: 5px;
+}
