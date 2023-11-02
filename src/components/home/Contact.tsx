@@ -11,7 +11,7 @@ const nunito = Nunito({
 
 const Contact = () => {
   return (
-    <section className="relative w-full">
+    <section id="section-contact" className="relative w-full">
       <div className="absolute top-0 w-full gradient_top h-[30%] text-2xl"></div>
       <Image
         src={"/contact.jpg"}

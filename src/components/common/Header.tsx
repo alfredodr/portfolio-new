@@ -34,15 +34,15 @@ const Header = () => {
       setblackBackground(false);
     }
 
-    if (winScroll < 1000) {
+    if (winScroll < 700) {
       setCurrentSection("section-top");
-    } else if (winScroll > 980 && winScroll < 2000) {
+    } else if (winScroll > 700 && winScroll < 2000) {
       setCurrentSection("section-about");
-    } else if (winScroll > 2000 && winScroll < 3000) {
-      setCurrentSection("section-services");
-    } else if (winScroll > 3000 && winScroll < 4000) {
+    } else if (winScroll > 2000 && winScroll < 2700) {
+      setCurrentSection("section-work");
+    } else if (winScroll > 2700 && winScroll < 3500) {
       setCurrentSection("section-portfolio");
-    } else if (winScroll > 4000 && winScroll < 5000) {
+    } else if (winScroll > 3500 && winScroll < 5000) {
       setCurrentSection("section-resume");
     } else if (winScroll > 5000 && winScroll < 5500) {
       setCurrentSection("section-contact");
@@ -120,11 +120,11 @@ const Header = () => {
               </li>
               <li className="text-sm font-semibold text-[#fff] whitespace-nowrap">
                 <Link
-                  href={"#section-services"}
+                  href={"#section-work"}
                   className={cn(
                     "focus:text-[#cf1f1f] transition-colors delay-200 duration-300 ease-in-out",
-                    { "text-[#cf1f1f]": currentSection === "section-services" },
-                    { "text-[#fff]": currentSection !== "section-services" }
+                    { "text-[#cf1f1f]": currentSection === "section-work" },
+                    { "text-[#fff]": currentSection !== "section-work" }
                   )}
                   aria-label="scroll to section services"
                 >

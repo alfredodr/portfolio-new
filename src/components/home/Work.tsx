@@ -12,7 +12,7 @@ const nunito = Nunito({
 
 const Work = () => {
   return (
-    <section id="section-about" className="bg-[#191A1C]">
+    <section id="section-work" className="bg-[#191A1C]">
       <div className="max-w-[76rem] px-8 py-20 mx-auto">
         <h2 className="text-center text-4xl text-white font-bold">What I Do</h2>
         <div className="text-center mb-10">
@@ -31,7 +31,9 @@ const Work = () => {
                 Front End
               </h3>
             </div>
-            <p className="text-[#909090] text-base md:text-lg">
+            <p
+              className={`text-[#909090] text-base md:text-lg ${nunito.variable} font-nunito`}
+            >
               I craft web front-end experiences by harnessing the power of HTML,
               CSS, JavaScript, and React. In my development journey, I often
               explore a diverse array of libraries and tools to tackle specific
@@ -48,7 +50,9 @@ const Work = () => {
                 Backend
               </h3>
             </div>
-            <p className="text-[#909090] text-base md:text-lg">
+            <p
+              className={`text-[#909090] text-base md:text-lg ${nunito.variable} font-nunito`}
+            >
               My expertise extends to constructing robust backend APIs with a
               strong focus on user authentication and authorization. To achieve
               this, I leverage tools like Node.js, and Express, ensuring the

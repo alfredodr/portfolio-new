@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Layout from "@/components/common/Layout";
 import { Saira } from "next/font/google";
+import ScrollToTop from "@/components/common/ScrollToTop";
 
 const saira = Saira({
   subsets: ["latin"],
@@ -18,6 +19,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         }
       `}</style>
       <Layout>
+        <ScrollToTop />
         <Component {...pageProps} />
       </Layout>
     </>

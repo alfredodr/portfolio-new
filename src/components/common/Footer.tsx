@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer>
       <div
-        className={`text-center text-base text-[#ffffff80] font-normal py-5 bg-[#171a1d] ${nunito.variable} font-nunito`}
+        className={`text-center text-base text-[#ffffff80] font-normal py-5 bg-[#171a1d] ${nunito.variable} font-nunito border border-[#ffffff1a] border-l-transparent border-r-transparent border-b-transparent`}
       >
         © Copywright {new Date().getFullYear()} - Alfredo Dominguez
       </div>

@@ -10,7 +10,7 @@ const nunito = Nunito({
 
 const Resume = () => {
   return (
-    <section id="section-about" className="bg-[#191A1C]">
+    <section id="section-resume" className="bg-[#191A1C]">
       <div className="max-w-[76rem] px-8 py-20 mx-auto">
         <h2 className="text-center text-4xl text-white font-bold">Resume</h2>
         <div className="text-center mb-10">
