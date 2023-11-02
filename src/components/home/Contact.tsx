@@ -12,14 +12,15 @@ const nunito = Nunito({
 const Contact = () => {
   return (
     <section className="relative w-full">
+      <div className="absolute top-0 w-full gradient_top h-[30%] text-2xl"></div>
       <Image
         src={"/contact.jpg"}
         alt={"contact"}
         fill
         className="object-cover -z-10"
       />
-      <div className="max-w-[63.083125rem] min-h-[963px] px-8 flex flex-col justify-center">
-        <h2 className="text-center text-4xl text-white font-bold">
+      <div className="max-w-[63.083125rem] min-h-[963px] px-8 m-auto flex flex-col justify-center">
+        <h2 className="text-center text-4xl text-white font-bold z-10">
           Contact Me
         </h2>
         <div className="text-center mb-10">
@@ -59,15 +60,16 @@ const Contact = () => {
             Send Message
           </button>
         </form>
-        <h5 className="mt-14 text-center text-base text-[#ffffff] font-bold mb-2">
+        <h5 className="mt-14 text-center text-base text-[#ffffff] font-bold mb-2 z-10">
           Email Me
         </h5>
         <span
-          className={`text-center text-base text-[#aaaaaa] font-normal ${nunito.variable} font-nunito`}
+          className={`text-center text-base text-[#aaaaaa] font-normal ${nunito.variable} font-nunito z-10`}
         >
           support@alfredojdominguez.com
         </span>
       </div>
+      <div className="absolute bottom-0 w-full gradient_bottom h-[30%]  text-2xl "></div>
     </section>
   );
 };
