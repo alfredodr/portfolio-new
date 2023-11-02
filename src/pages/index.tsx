@@ -4,6 +4,7 @@ import Quote from "@/components/home/Quote";
 import Work from "@/components/home/Work";
 import Portfolio from "@/components/home/Portfolio";
 import Resume from "@/components/home/Resume";
+import Contact from "@/components/home/Contact";
 
 const Home = () => {
   return (
@@ -14,7 +15,7 @@ const Home = () => {
       <Work />
       <Portfolio />
       <Resume />
-      <section id="section-contact" className="h-[67rem] bg-blue-50"></section>
+      <Contact />
     </>
   );
 };
