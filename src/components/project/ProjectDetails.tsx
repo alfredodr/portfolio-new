@@ -79,7 +79,7 @@ const ProjectDetails = ({ data }: { data: any }) => {
           </span>
           <span className="flex flex-col items-center">
             <svg
-              fill="#aaaaaa"
+              fill="#ffffff"
               width="40px"
               height="40px"
               viewBox="0 0 24 24"

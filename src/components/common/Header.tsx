@@ -44,7 +44,7 @@ const Header = () => {
       setCurrentSection("section-portfolio");
     } else if (winScroll > 3500 && winScroll < 5000) {
       setCurrentSection("section-resume");
-    } else if (winScroll > 5000 && winScroll < 5500) {
+    } else if (winScroll > 5000 && winScroll < 6000) {
       setCurrentSection("section-contact");
     } else {
       setCurrentSection("");
