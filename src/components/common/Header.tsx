@@ -94,7 +94,7 @@ const Header = () => {
             <ul className="flex flex-col md:flex-row m-0 p-0 list-none gap-0 md:gap-16 justify-center md:justify-center items-center">
               <li className="text-sm font-semibold text-[#fff]">
                 <Link
-                  href={"#section-top"}
+                  href={"/#section-top"}
                   className={cn(
                     "focus:text-[#cf1f1f] transition-colors delay-200 duration-300 ease-in-out",
                     { "text-[#cf1f1f]": currentSection === "section-top" },
@@ -107,7 +107,7 @@ const Header = () => {
               </li>
               <li className="text-sm font-semibold text-[#fff] whitespace-nowrap">
                 <Link
-                  href={"#section-about"}
+                  href={"/#section-about"}
                   className={cn(
                     "focus:text-[#cf1f1f] transition-colors delay-200 duration-300 ease-in-out",
                     { "text-[#cf1f1f]": currentSection === "section-about" },
@@ -120,7 +120,7 @@ const Header = () => {
               </li>
               <li className="text-sm font-semibold text-[#fff] whitespace-nowrap">
                 <Link
-                  href={"#section-work"}
+                  href={"/#section-work"}
                   className={cn(
                     "focus:text-[#cf1f1f] transition-colors delay-200 duration-300 ease-in-out",
                     { "text-[#cf1f1f]": currentSection === "section-work" },
@@ -133,7 +133,7 @@ const Header = () => {
               </li>
               <li className="text-sm font-semibold text-[#fff] whitespace-nowrap">
                 <Link
-                  href={"#section-portfolio"}
+                  href={"/#section-portfolio"}
                   className={cn(
                     "focus:text-[#cf1f1f] transition-colors delay-200 duration-300 ease-in-out",
                     {
@@ -148,7 +148,7 @@ const Header = () => {
               </li>
               <li className="text-sm font-semibold text-[#fff] whitespace-nowrap">
                 <Link
-                  href={"#section-resume"}
+                  href={"/#section-resume"}
                   className={cn(
                     "focus:text-[#cf1f1f] transition-colors delay-200 duration-300 ease-in-out",
                     { "text-[#cf1f1f]": currentSection === "section-resume" },
@@ -161,7 +161,7 @@ const Header = () => {
               </li>
               <li className="text-sm font-semibold text-[#fff] whitespace-nowrap">
                 <Link
-                  href={"#section-contact"}
+                  href={"/#section-contact"}
                   className={cn(
                     "focus:text-[#cf1f1f] transition-colors delay-200 duration-300 ease-in-out",
                     { "text-[#cf1f1f]": currentSection === "section-contact" },
@@ -208,7 +208,7 @@ const Header = () => {
               )}
             >
               <Link
-                href={"#section-top"}
+                href={"/#section-top"}
                 onClick={toggleMobileMenu}
                 aria-label="scroll to section top"
               >
@@ -225,7 +225,7 @@ const Header = () => {
               )}
             >
               <Link
-                href={"#section-about"}
+                href={"/#section-about"}
                 onClick={toggleMobileMenu}
                 aria-label="scroll to section about"
               >
@@ -242,7 +242,7 @@ const Header = () => {
               )}
             >
               <Link
-                href={"#section-services"}
+                href={"/#section-services"}
                 onClick={toggleMobileMenu}
                 aria-label="scroll to section services"
               >
@@ -259,7 +259,7 @@ const Header = () => {
               )}
             >
               <Link
-                href={"#section-portfolio"}
+                href={"/#section-portfolio"}
                 onClick={toggleMobileMenu}
                 aria-label="scroll to section porftolio"
               >
@@ -276,7 +276,7 @@ const Header = () => {
               )}
             >
               <Link
-                href={"#section-resume"}
+                href={"/#section-resume"}
                 onClick={toggleMobileMenu}
                 aria-label="scroll to section resume"
               >
@@ -293,7 +293,7 @@ const Header = () => {
               )}
             >
               <Link
-                href={"#section-contact"}
+                href={"/#section-contact"}
                 onClick={toggleMobileMenu}
                 aria-label="scroll to section contact me"
               >
