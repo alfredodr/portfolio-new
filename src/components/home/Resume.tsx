@@ -180,8 +180,8 @@ const Resume = () => {
                   <span
                     className={`text-base font-normal ${nunito.variable} font-nunito text-[#aaaaaa]`}
                   >
-                    Completed over 90 credits towards a Bachelor's Degree in
-                    Computer Science
+                    Completed over 90 credits towards a Bachelor&lsquo;s Degree
+                    in Computer Science
                   </span>
                 </div>
               </li>

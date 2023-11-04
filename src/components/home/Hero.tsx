@@ -28,7 +28,7 @@ const Hero = () => {
         <span className="text-[#cf1f1f] text-base font-bold mb-5 z-10">
           I am Alfredo J Dominguez
         </span>
-        <Typewriter />
+        {/* <Typewriter /> */}
       </div>
       {/* Desktop */}
       <Image

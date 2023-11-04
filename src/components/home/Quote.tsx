@@ -28,8 +28,8 @@ const Quote = () => {
         <blockquote
           className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#ffffff] text-left font-bold ${nunito.variable} font-nunito my-4`}
         >
-          "Through unwavering dedication and relentless effort, we can achieve
-          anything we set our minds on."
+          &quot;Through unwavering dedication and relentless effort, we can
+          achieve anything we set our minds on.&quot;
         </blockquote>
         <span
           className={`text-sm md:text-base lg:text-lg font-normal text-[#ffffff] ${nunito.variable} font-nunito border border-t-transparent border-r-transparent border-b-transparent border-[#ffffff33] pl-5`}

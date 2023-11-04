@@ -357,28 +357,6 @@ const ProjectDetails = ({ data }: { data: any }) => {
               </Link>
             </span>
           </li>
-          <li className="flex items-center justify-between text-[#aaaaaa] border border-[#ffffff1a] border-t-transparent border-l-transparent border-r-transparent py-2">
-            <div className="flex items-center">
-              <span className="text-[#ffffff] text-3xl">
-                <LuExternalLink />
-              </span>
-              <h3
-                className={`text-[#aaaaaa] text-base ${nunito.variable} font-nunito font-normal mx-2`}
-              >
-                Preview:
-              </h3>
-            </div>
-            <span className="text-[#ffffff] text-3xl">
-              <Link
-                href={"https://alfredojdominguez.com/"}
-                passHref
-                target="_blank"
-                className={`text-[#cf1f1f] text-base ${nunito.variable} font-nunito font-normal `}
-              >
-                wwww.alfredojdominguez.com
-              </Link>
-            </span>
-          </li>
         </>
       );
     } else if (id === 1) {
