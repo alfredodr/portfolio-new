@@ -30,7 +30,7 @@ const ScrollToTop = () => {
 
   return (
     <button
-      className={`fixed right-[1%] bottom-[1%] z-40 bg-[#171A1D] border border-[#ffffff33] w-10 h-10 rounded-full flex flex-col items-center justify-evenly p-5 ${
+      className={`fixed right-[1%] bottom-[10%] z-40 bg-[#171A1D] border border-[#ffffff33] w-10 h-10 rounded-full flex flex-col items-center justify-evenly p-5 ${
         showButton ? "" : "hidden"
       }`}
       onClick={scrollToTop}

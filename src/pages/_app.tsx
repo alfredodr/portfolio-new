@@ -1,3 +1,4 @@
+import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Layout from "@/components/common/Layout";
@@ -18,10 +19,20 @@ const App = ({ Component, pageProps }: AppProps) => {
           font-family: ${saira.style.fontFamily};
         }
       `}</style>
-      <Layout>
-        <ScrollToTop />
-        <Component {...pageProps} />
-      </Layout>
+      <GoogleReCaptchaProvider
+        reCaptchaKey={`${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`}
+        scriptProps={{
+          async: false,
+          defer: false,
+          appendTo: "head",
+          nonce: undefined,
+        }}
+      >
+        <Layout>
+          <ScrollToTop />
+          <Component {...pageProps} />
+        </Layout>
+      </GoogleReCaptchaProvider>
     </>
   );
 };
