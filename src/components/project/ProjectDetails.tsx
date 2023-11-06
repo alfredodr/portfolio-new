@@ -17,6 +17,7 @@ import { SiExpress } from "react-icons/si";
 import { Nunito } from "next/font/google";
 import { LuExternalLink } from "react-icons/lu";
 import { BiLogoTypescript } from "react-icons/bi";
+import { NextSeo, BreadcrumbJsonLd } from "next-seo";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -26,7 +27,8 @@ const nunito = Nunito({
 });
 
 const ProjectDetails = ({ data }: { data: any }) => {
-  const { id, img, name, description, category } = data;
+  const { id, img, name, description, category, createdAt, updatedAt, slug } =
+    data;
 
   let stacks = (id: number) => {
     if (id === 2) {
@@ -397,12 +399,12 @@ const ProjectDetails = ({ data }: { data: any }) => {
             </div>
             <span className="text-[#ffffff] text-3xl">
               <Link
-                href={"https://fishingshirtsnow.com/"}
+                href={"https://alfredojdominguez.com.com/"}
                 passHref
                 target="_blank"
                 className={`text-[#cf1f1f] text-base ${nunito.variable} font-nunito font-normal `}
               >
-                fishingshirtsnow.com
+                alfredojdominguez.com.com
               </Link>
             </span>
           </li>
@@ -512,59 +514,104 @@ const ProjectDetails = ({ data }: { data: any }) => {
   };
 
   return (
-    <div className="max-w-[76rem] min-h-screen flex flex-col justify-center items-center mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-8 py-40">
-        <div className="relative w-full h-full overflow-hidden">
-          <Image
-            src={img}
-            alt="Project Image"
-            className="object-cover"
-            priority
-          />
-        </div>
-        <div>
-          <h1 className="text-4xl text-[#ffffff] font-bold mb-6">{name}</h1>
-          <p
-            className={`${nunito.variable} font-nunito font-normal text-base sm:text-lg text-[#aaaaaa] mb-5`}
-          >
-            {description}
-          </p>
-          <ul>
-            <li className="flex items-center justify-between text-[#aaaaaa] border border-[#ffffff1a] border-t-transparent border-l-transparent border-r-transparent py-2">
-              <div className="flex items-center">
-                <span className="text-[#ffffff] text-3xl">
-                  <BiCategory />
-                </span>
-                <h3
-                  className={`text-[#aaaaaa] text-base ${nunito.variable} font-nunito font-normal mr-10 ml-2`}
-                >
-                  Category:
-                </h3>
-              </div>
+    <>
+      <NextSeo
+        title="Alfredo J Dominguez - Web Developer"
+        description={`${description}`}
+        additionalLinkTags={[
+          {
+            rel: "icon",
+            href: "/favicon.ico",
+          },
+        ]}
+        openGraph={{
+          type: "article",
+          article: {
+            publishedTime: `${createdAt}`,
+            modifiedTime: `${updatedAt}`,
+          },
+          title: `${name} - Sun Protective - Fishing Shirts Now`,
+          description: `${description}`,
+          url: `https://alfredojdominguez.com.com/${slug}/`,
+          images: [
+            {
+              url: img,
+              width: 500,
+              height: 500,
+              alt: `${name}`,
+              type: "image/jpeg",
+            },
+          ],
+        }}
+      />
+      <BreadcrumbJsonLd
+        itemListElements={[
+          {
+            position: 1,
+            name: "Home",
+            item: "https://alfredojdominguez.com/",
+          },
+          {
+            position: 2,
+            name: "Store",
+            item: `https://alfredojdominguez.com/${slug}/`,
+          },
+        ]}
+      />
+      <div className="max-w-[76rem] min-h-screen flex flex-col justify-center items-center mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-8 py-40">
+          <div className="relative w-full h-full overflow-hidden">
+            <Image
+              src={img}
+              alt="Project Image"
+              className="object-cover"
+              priority
+            />
+          </div>
+          <div>
+            <h1 className="text-4xl text-[#ffffff] font-bold mb-6">{name}</h1>
+            <p
+              className={`${nunito.variable} font-nunito font-normal text-base sm:text-lg text-[#aaaaaa] mb-5`}
+            >
+              {description}
+            </p>
+            <ul>
+              <li className="flex items-center justify-between text-[#aaaaaa] border border-[#ffffff1a] border-t-transparent border-l-transparent border-r-transparent py-2">
+                <div className="flex items-center">
+                  <span className="text-[#ffffff] text-3xl">
+                    <BiCategory />
+                  </span>
+                  <h3
+                    className={`text-[#aaaaaa] text-base ${nunito.variable} font-nunito font-normal mr-10 ml-2`}
+                  >
+                    Category:
+                  </h3>
+                </div>
 
-              <p className={`text-[#ffffff] ${nunito.variable} font-nunito`}>
-                {category}
-              </p>
-            </li>
-            <li className="flex items-center justify-between text-[#aaaaaa] border border-[#ffffff1a] border-t-transparent border-l-transparent border-r-transparent py-2">
-              <div className="flex items-center">
-                <span className="text-[#ffffff] text-3xl">
-                  <FaLaptopCode />
-                </span>
-                <h3
-                  className={`text-[#aaaaaa] text-base ${nunito.variable} font-nunito font-normal mx-2`}
-                >
-                  Stacks Used:
-                </h3>
-              </div>
+                <p className={`text-[#ffffff] ${nunito.variable} font-nunito`}>
+                  {category}
+                </p>
+              </li>
+              <li className="flex items-center justify-between text-[#aaaaaa] border border-[#ffffff1a] border-t-transparent border-l-transparent border-r-transparent py-2">
+                <div className="flex items-center">
+                  <span className="text-[#ffffff] text-3xl">
+                    <FaLaptopCode />
+                  </span>
+                  <h3
+                    className={`text-[#aaaaaa] text-base ${nunito.variable} font-nunito font-normal mx-2`}
+                  >
+                    Stacks Used:
+                  </h3>
+                </div>
 
-              {stacks(id)}
-            </li>
-            {externalLinks(id)}
-          </ul>
+                {stacks(id)}
+              </li>
+              {externalLinks(id)}
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

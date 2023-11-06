@@ -43,8 +43,8 @@ const Portfolio = () => {
                     }
                   )}
                 >
-                  <div className="relative flex flex-col items-center justify-center w-full h-[20.625rem] transition-all duration-500 ease-in-out grayscale hover:grayscale-0 text-[#ffffff]/0 hover:text-[#ffffff]/100 scale-110 hover:scale-100">
-                    <Link href={"/project/1"}>
+                  <Link href={"/project/1"}>
+                    <div className="relative flex flex-col items-center justify-center w-full h-[20.625rem] transition-all duration-500 ease-in-out grayscale hover:grayscale-0 text-[#ffffff]/0 hover:text-[#ffffff]/100 scale-110 hover:scale-100">
                       <h3 className="text-2xl font-bold">
                         Fishing Shirts Store
                       </h3>
@@ -57,8 +57,8 @@ const Portfolio = () => {
                         fill
                         className="object-cover -z-10"
                       />
-                    </Link>
-                  </div>
+                    </div>
+                  </Link>
                 </div>
               );
             }}
@@ -75,8 +75,8 @@ const Portfolio = () => {
                     }
                   )}
                 >
-                  <div className="relative flex flex-col items-center justify-center w-full h-[13.75rem] transition-all duration-500 ease-in-out grayscale hover:grayscale-0 text-[#ffffff]/0 hover:text-[#ffffff]/100 scale-110 hover:scale-100">
-                    <Link href={"/project/2"}>
+                  <Link href={"/project/2"}>
+                    <div className="relative flex flex-col items-center justify-center w-full h-[13.75rem] transition-all duration-500 ease-in-out grayscale hover:grayscale-0 text-[#ffffff]/0 hover:text-[#ffffff]/100 scale-110 hover:scale-100">
                       <h3 className="text-2xl font-bold">Find an Agent</h3>
                       <h5 className="text-sm font-light absolute bottom-[5%]">
                         Landing Pages
@@ -87,8 +87,8 @@ const Portfolio = () => {
                         fill
                         className="object-cover -z-10"
                       />
-                    </Link>
-                  </div>
+                    </div>
+                  </Link>
                 </div>
               );
             }}
@@ -105,8 +105,8 @@ const Portfolio = () => {
                     }
                   )}
                 >
-                  <div className="relative flex flex-col items-center justify-center w-full h-[20.625rem] transition-all duration-500 ease-in-out grayscale hover:grayscale-0 text-[#ffffff]/0 hover:text-[#ffffff]/100 scale-110 hover:scale-100">
-                    <Link href={"/project/3"}>
+                  <Link href={"/project/3"}>
+                    <div className="relative flex flex-col items-center justify-center w-full h-[20.625rem] transition-all duration-500 ease-in-out grayscale hover:grayscale-0 text-[#ffffff]/0 hover:text-[#ffffff]/100 scale-110 hover:scale-100">
                       <h3 className="text-2xl font-bold">Conversion Lab</h3>
                       <h5 className="text-sm font-light absolute bottom-[5%]">
                         Landing Page
@@ -117,8 +117,8 @@ const Portfolio = () => {
                         fill
                         className="object-cover -z-10"
                       />
-                    </Link>
-                  </div>
+                    </div>
+                  </Link>
                 </div>
               );
             }}
@@ -135,8 +135,8 @@ const Portfolio = () => {
                     }
                   )}
                 >
-                  <div className="relative flex flex-col items-center justify-center w-full h-[20.625rem] transition-all duration-500 ease-in-out grayscale hover:grayscale-0 text-[#ffffff]/0 hover:text-[#ffffff]/100 scale-110 hover:scale-100">
-                    <Link href={"/project/4"}>
+                  <Link href={"/project/4"}>
+                    <div className="relative flex flex-col items-center justify-center w-full h-[20.625rem] transition-all duration-500 ease-in-out grayscale hover:grayscale-0 text-[#ffffff]/0 hover:text-[#ffffff]/100 scale-110 hover:scale-100">
                       <h3 className="text-2xl font-bold">Todo Tasker App</h3>
                       <h5 className="text-sm font-light absolute bottom-[5%]">
                         Application
@@ -147,8 +147,8 @@ const Portfolio = () => {
                         fill
                         className="object-cover -z-10"
                       />
-                    </Link>
-                  </div>
+                    </div>
+                  </Link>
                 </div>
               );
             }}
@@ -165,8 +165,8 @@ const Portfolio = () => {
                     }
                   )}
                 >
-                  <div className="relative flex flex-col items-center justify-center w-full h-[13.75rem] transition-all duration-500 ease-in-out grayscale hover:grayscale-0 text-[#ffffff]/0 hover:text-[#ffffff]/100 scale-110 hover:scale-100">
-                    <Link href={"/project/5"}>
+                  <Link href={"/project/5"}>
+                    <div className="relative flex flex-col items-center justify-center w-full h-[13.75rem] transition-all duration-500 ease-in-out grayscale hover:grayscale-0 text-[#ffffff]/0 hover:text-[#ffffff]/100 scale-110 hover:scale-100">
                       <h3 className="text-2xl font-bold">Portfolio</h3>
                       <h5 className="text-sm font-light absolute bottom-[5%]">
                         Website
@@ -177,8 +177,8 @@ const Portfolio = () => {
                         fill
                         className="object-cover -z-10"
                       />
-                    </Link>
-                  </div>
+                    </div>
+                  </Link>
                 </div>
               );
             }}
@@ -195,8 +195,8 @@ const Portfolio = () => {
                     }
                   )}
                 >
-                  <div className="relative flex flex-col items-center justify-center w-full h-[13.75rem] transition-all duration-500 ease-in-out grayscale hover:grayscale-0 text-[#ffffff]/0 hover:text-[#ffffff]/100 scale-110 hover:scale-100">
-                    <Link href={"/project/6"}>
+                  <Link href={"/project/6"}>
+                    <div className="relative flex flex-col items-center justify-center w-full h-[13.75rem] transition-all duration-500 ease-in-out grayscale hover:grayscale-0 text-[#ffffff]/0 hover:text-[#ffffff]/100 scale-110 hover:scale-100">
                       <h3 className="text-2xl font-bold">
                         Breaking Bad Quotes
                       </h3>
@@ -209,8 +209,8 @@ const Portfolio = () => {
                         fill
                         className="object-cover -z-10"
                       />
-                    </Link>
-                  </div>
+                    </div>
+                  </Link>
                 </div>
               );
             }}

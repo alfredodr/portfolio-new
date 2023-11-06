@@ -25,6 +25,9 @@ export const projects = [
     img: img1,
     description: desc1,
     category: "HTML, CSS, JS, Wordpress",
+    createdAt: "2023-06-04T02:37:50+00:00",
+    updatedAt: "2023-06-04T02:37:50+00:00",
+    slug: "project/2",
   },
   {
     id: 6,
@@ -32,6 +35,9 @@ export const projects = [
     img: img2,
     description: desc2,
     category: "HTML, CSS, JS, React, Material UI",
+    createdAt: "2023-06-16T02:29:31+00:00",
+    updatedAt: "2023-06-16T02:29:31+00:00",
+    slug: "project/6",
   },
   {
     id: 5,
@@ -39,6 +45,9 @@ export const projects = [
     img: img3,
     description: desc3,
     category: "HTML, CSS, JS, React, Next.js",
+    createdAt: "2023-06-11T22:07:14+00:00",
+    updatedAt: "2023-06-11T22:07:14+00:00",
+    slug: "project/5",
   },
   {
     id: 1,
@@ -47,6 +56,9 @@ export const projects = [
     description: desc4,
     category:
       "HTML, CSS, JS, Next.js, Mongodb, Express.js, React.js, Node.js, Tailwindcss",
+    createdAt: "2023-06-04T02:34:10+00:00",
+    updatedAt: "2023-06-04T02:34:10+00:00",
+    slug: "project/1",
   },
   {
     id: 4,
@@ -55,6 +67,9 @@ export const projects = [
     description: desc5,
     category:
       "HTML, CSS, JS, Next.js, Mongodb, Express.js, React.js, Node.js, Tailwindcss",
+    createdAt: "2023-06-20T14:47:29+00:00",
+    updatedAt: "2023-06-20T14:47:29+00:00",
+    slug: "project/4",
   },
   {
     id: 3,
@@ -62,5 +77,8 @@ export const projects = [
     img: img6,
     description: desc6,
     category: "HTML, CSS, JS, TS, React, Next.js, Tailwindcss",
+    createdAt: "2023-06-16T16:13:51+00:00",
+    updatedAt: "2023-06-16T16:13:51+00:00",
+    slug: "project/3",
   },
 ];

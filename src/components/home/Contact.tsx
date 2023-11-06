@@ -225,6 +225,7 @@ const Contact = () => {
 
                 {msgStatus === true ? (
                   <div
+                    id="contact_success"
                     className={cn(
                       "text-base flex flex-col items-center border border-[#96c346] w-full p-5 mx-auto bg-[#96c3461a] mt-10 transition-opacity delay-150 duration-500 z-10",
                       {

@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: https://alfredojdominguez.com/sitemap_index.xml
+

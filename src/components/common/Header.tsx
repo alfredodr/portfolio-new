@@ -70,7 +70,7 @@ const Header = () => {
     >
       <div className="relative group">
         <div className="max-w-[76rem] min-h-[5.6748125rem] px-8 mx-auto flex justify-between items-center">
-          <Link href={"/"} aria-label="home">
+          <Link href={"/"} aria-label="Alfredo Web Developer">
             <div className="flex flex-col justify-center items-center whitespace-nowrap">
               <div className="flex items-center">
                 <FaMinus color="#9E1030" />
@@ -100,7 +100,7 @@ const Header = () => {
                     { "text-[#cf1f1f]": currentSection === "section-top" },
                     { "text-[#fff]": currentSection !== "section-top" }
                   )}
-                  aria-label="scroll to section top"
+                  aria-label="Home"
                 >
                   Home
                 </Link>
@@ -113,7 +113,7 @@ const Header = () => {
                     { "text-[#cf1f1f]": currentSection === "section-about" },
                     { "text-[#fff]": currentSection !== "section-about" }
                   )}
-                  aria-label="scroll to section about"
+                  aria-label="About me"
                 >
                   About me
                 </Link>
@@ -126,7 +126,7 @@ const Header = () => {
                     { "text-[#cf1f1f]": currentSection === "section-work" },
                     { "text-[#fff]": currentSection !== "section-work" }
                   )}
-                  aria-label="scroll to section services"
+                  aria-label="What I do"
                 >
                   What I do
                 </Link>
@@ -141,7 +141,7 @@ const Header = () => {
                     },
                     { "text-[#fff]": currentSection !== "section-portfolio" }
                   )}
-                  aria-label="scroll to section portfolio"
+                  aria-label="Portfolio"
                 >
                   Portfolio
                 </Link>
@@ -154,7 +154,7 @@ const Header = () => {
                     { "text-[#cf1f1f]": currentSection === "section-resume" },
                     { "text-[#fff]": currentSection !== "section-resume" }
                   )}
-                  aria-label="scroll to section resume"
+                  aria-label="My Resume"
                 >
                   My Resume
                 </Link>
@@ -167,7 +167,7 @@ const Header = () => {
                     { "text-[#cf1f1f]": currentSection === "section-contact" },
                     { "text-[#fff]": currentSection !== "section-contact" }
                   )}
-                  aria-label="scroll to section contact"
+                  aria-label="Contact Me"
                 >
                   Contact Me
                 </Link>
@@ -203,14 +203,14 @@ const Header = () => {
                 "text-sm font-semibold text-[#fff] border-y border-[#ffffff1a] border-t-transparent w-full py-3 bg-[#171a1d] px-8 transition-opacity",
                 { "opacity-100": isActive },
                 {
-                  "opacity-0 delay-[450ms]": !isActive,
+                  "opacity-0 delay-700": !isActive,
                 }
               )}
             >
               <Link
                 href={"/#section-top"}
                 onClick={toggleMobileMenu}
-                aria-label="scroll to section top"
+                aria-label="Home"
               >
                 Home
               </Link>
@@ -220,14 +220,14 @@ const Header = () => {
                 "text-sm font-semibold text-[#fff] border-y border-[#ffffff1a] border-t-transparent w-full whitespace-nowrap px-8 py-3 bg-[#171a1d] transition-opacity",
                 { "opacity-100 delay-100": isActive },
                 {
-                  "opacity-0 delay-[400ms]": !isActive,
+                  "opacity-0 delay-500": !isActive,
                 }
               )}
             >
               <Link
                 href={"/#section-about"}
                 onClick={toggleMobileMenu}
-                aria-label="scroll to section about"
+                aria-label=" About me"
               >
                 About me
               </Link>
@@ -244,7 +244,7 @@ const Header = () => {
               <Link
                 href={"/#section-services"}
                 onClick={toggleMobileMenu}
-                aria-label="scroll to section services"
+                aria-label="What I do"
               >
                 What I do
               </Link>
@@ -261,7 +261,7 @@ const Header = () => {
               <Link
                 href={"/#section-portfolio"}
                 onClick={toggleMobileMenu}
-                aria-label="scroll to section porftolio"
+                aria-label="Portfolio"
               >
                 Portfolio
               </Link>
@@ -278,7 +278,7 @@ const Header = () => {
               <Link
                 href={"/#section-resume"}
                 onClick={toggleMobileMenu}
-                aria-label="scroll to section resume"
+                aria-label="My Resume"
               >
                 My Resume
               </Link>
@@ -295,7 +295,7 @@ const Header = () => {
               <Link
                 href={"/#section-contact"}
                 onClick={toggleMobileMenu}
-                aria-label="scroll to section contact me"
+                aria-label="Contact Me"
               >
                 Contact Me
               </Link>

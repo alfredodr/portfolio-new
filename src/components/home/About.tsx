@@ -71,7 +71,7 @@ const About = () => {
                   })}
                 >
                   <DiHtml5 style={{ fontSize: 40 }} />
-                  <h4 className="text-xl font-bold text-[#ffffff]">HTML5</h4>
+                  <h3 className="text-xl font-bold text-[#ffffff]">HTML5</h3>
                 </span>
               );
             }}
@@ -87,7 +87,7 @@ const About = () => {
                   style={{ animationDelay: "600ms" }}
                 >
                   <DiCss3 style={{ fontSize: 40 }} />
-                  <h4 className="text-xl font-bold text-[#ffffff]">CSS3</h4>
+                  <h3 className="text-xl font-bold text-[#ffffff]">CSS3</h3>
                 </span>
               );
             }}
@@ -103,7 +103,7 @@ const About = () => {
                   style={{ animationDelay: "700ms" }}
                 >
                   <DiSass style={{ fontSize: 40 }} />
-                  <h4 className="text-xl font-bold text-[#ffffff]">SASS</h4>
+                  <h3 className="text-xl font-bold text-[#ffffff]">SASS</h3>
                 </span>
               );
             }}
@@ -119,9 +119,9 @@ const About = () => {
                   style={{ animationDelay: "800ms" }}
                 >
                   <SiTailwindcss style={{ fontSize: 40 }} />
-                  <h4 className="text-xl font-bold text-[#ffffff]">
+                  <h3 className="text-xl font-bold text-[#ffffff]">
                     Tailwindcss
-                  </h4>
+                  </h3>
                 </span>
               );
             }}
@@ -137,9 +137,9 @@ const About = () => {
                   style={{ animationDelay: "900ms" }}
                 >
                   <DiJavascript style={{ fontSize: 40 }} />
-                  <h4 className="text-xl font-bold text-[#ffffff]">
+                  <h3 className="text-xl font-bold text-[#ffffff]">
                     JavaScript
-                  </h4>
+                  </h3>
                 </span>
               );
             }}
@@ -155,9 +155,9 @@ const About = () => {
                   style={{ animationDelay: "1000ms" }}
                 >
                   <BiLogoTypescript style={{ fontSize: 40 }} />
-                  <h4 className="text-xl font-bold text-[#ffffff]">
+                  <h3 className="text-xl font-bold text-[#ffffff]">
                     TypesCript
-                  </h4>
+                  </h3>
                 </span>
               );
             }}
@@ -173,7 +173,7 @@ const About = () => {
                   style={{ animationDelay: "1100ms" }}
                 >
                   <DiReact style={{ fontSize: 40 }} />
-                  <h4 className="text-xl font-bold text-[#ffffff]">React</h4>
+                  <h3 className="text-xl font-bold text-[#ffffff]">React</h3>
                 </span>
               );
             }}
@@ -189,7 +189,7 @@ const About = () => {
                   style={{ animationDelay: "1200ms" }}
                 >
                   <SiNextdotjs style={{ fontSize: 40 }} />
-                  <h4 className="text-xl font-bold text-[#ffffff]">Next.js</h4>
+                  <h3 className="text-xl font-bold text-[#ffffff]">Next.js</h3>
                 </span>
               );
             }}
@@ -215,9 +215,9 @@ const About = () => {
                     <title>Material-UI icon</title>
                     <path d="M0 2.475v10.39l3 1.733V7.67l6 3.465 6-3.465v3.465l-6 3.463v3.464l6 3.463 9-5.195V9.402l-3 1.733v3.463l-6 3.464-3-1.732 6-3.465V2.475L9 7.67 0 2.475zm24 0l-3 1.73V7.67l3-1.732V2.474Z" />
                   </svg>
-                  <h4 className="text-xl font-bold text-[#ffffff]">
+                  <h3 className="text-xl font-bold text-[#ffffff]">
                     Material UI
-                  </h4>
+                  </h3>
                 </span>
               );
             }}
@@ -233,7 +233,7 @@ const About = () => {
                   style={{ animationDelay: "1400ms" }}
                 >
                   <FaNodeJs style={{ fontSize: 40 }} />
-                  <h4 className="text-xl font-bold text-[#ffffff]">Node.js</h4>
+                  <h3 className="text-xl font-bold text-[#ffffff]">Node.js</h3>
                 </span>
               );
             }}
@@ -249,7 +249,7 @@ const About = () => {
                   style={{ animationDelay: "1500ms" }}
                 >
                   <DiMongodb style={{ fontSize: 40 }} />
-                  <h4 className="text-xl font-bold text-[#ffffff]">Mongodb</h4>
+                  <h3 className="text-xl font-bold text-[#ffffff]">Mongodb</h3>
                 </span>
               );
             }}
@@ -265,9 +265,9 @@ const About = () => {
                   style={{ animationDelay: "1600ms" }}
                 >
                   <SiExpress style={{ fontSize: 40 }} />
-                  <h4 className="text-xl font-bold text-[#ffffff]">
+                  <h3 className="text-xl font-bold text-[#ffffff]">
                     Express.js
-                  </h4>
+                  </h3>
                 </span>
               );
             }}
