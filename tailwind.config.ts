@@ -24,12 +24,37 @@ const config: Config = {
           "0%": { transform: "translateY(0)" },
           "100%": { transform: "translateY(15px)" },
         },
+        fadeInUp: {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(30%)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+        blink: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        fadeIn: {
+          "0%": {
+            opacity: "0",
+          },
+          "100%": {
+            opacity: "1",
+          },
+        },
       },
       animation: {
         scroll_mouse: "scroll_mouse 1s infinite",
+        fadeInUp: "fadeInUp 0.6s ease-in both",
+        blink: "blink 1s infinite",
+        fadeIn: "fadeIn 0.2s ease-in both",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };
 export default config;

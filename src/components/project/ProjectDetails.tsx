@@ -277,7 +277,7 @@ const ProjectDetails = ({ data }: { data: any }) => {
                 target="_blank"
                 className={`text-[#cf1f1f] text-base ${nunito.variable} font-nunito font-normal `}
               >
-                wwww.univistainsurance.com
+                univistainsurance.com
               </Link>
             </span>
           </li>
@@ -304,7 +304,7 @@ const ProjectDetails = ({ data }: { data: any }) => {
                 target="_blank"
                 className={`text-[#cf1f1f] text-base ${nunito.variable} font-nunito font-normal `}
               >
-                wwww.github.com/alfredodr/breaking-bad-quotes
+                github.com/alfredodr/breaking-bad-quotes
               </Link>
             </span>
           </li>
@@ -326,7 +326,7 @@ const ProjectDetails = ({ data }: { data: any }) => {
                 target="_blank"
                 className={`text-[#cf1f1f] text-base ${nunito.variable} font-nunito font-normal `}
               >
-                wwww.breaking-bad-quotes-lime.vercel.app
+                breaking-bad-quotes-lime.vercel.app
               </Link>
             </span>
           </li>
@@ -353,7 +353,7 @@ const ProjectDetails = ({ data }: { data: any }) => {
                 target="_blank"
                 className={`text-[#cf1f1f] text-base ${nunito.variable} font-nunito font-normal `}
               >
-                wwww.github.com/alfredodr/portfolio-new
+                github.com/alfredodr/portfolio-new
               </Link>
             </span>
           </li>
@@ -380,7 +380,7 @@ const ProjectDetails = ({ data }: { data: any }) => {
                 target="_blank"
                 className={`text-[#cf1f1f] text-base ${nunito.variable} font-nunito font-normal `}
               >
-                wwww.github.com/alfredodr/fishing-shirts
+                github.com/alfredodr/fishing-shirts
               </Link>
             </span>
           </li>
@@ -402,7 +402,7 @@ const ProjectDetails = ({ data }: { data: any }) => {
                 target="_blank"
                 className={`text-[#cf1f1f] text-base ${nunito.variable} font-nunito font-normal `}
               >
-                wwww.fishingshirtsnow.com
+                fishingshirtsnow.com
               </Link>
             </span>
           </li>
@@ -429,7 +429,7 @@ const ProjectDetails = ({ data }: { data: any }) => {
                 target="_blank"
                 className={`text-[#cf1f1f] text-base ${nunito.variable} font-nunito font-normal `}
               >
-                wwww.github.com/alfredodr/todo-tasker
+                github.com/alfredodr/todo-tasker
               </Link>
             </span>
           </li>
@@ -451,7 +451,7 @@ const ProjectDetails = ({ data }: { data: any }) => {
                 target="_blank"
                 className={`text-[#cf1f1f] text-base ${nunito.variable} font-nunito font-normal `}
               >
-                wwww.todo-tasker.vercel.app
+                todo-tasker.vercel.app
               </Link>
             </span>
           </li>
@@ -480,7 +480,7 @@ const ProjectDetails = ({ data }: { data: any }) => {
                 target="_blank"
                 className={`text-[#cf1f1f] text-base ${nunito.variable} font-nunito font-normal `}
               >
-                wwww.github.com/alfredodr/conversion-lab-landing-page
+                github.com/alfredodr/conversion-lab-landing-page
               </Link>
             </span>
           </li>
@@ -502,7 +502,7 @@ const ProjectDetails = ({ data }: { data: any }) => {
                 target="_blank"
                 className={`text-[#cf1f1f] text-base ${nunito.variable} font-nunito font-normal `}
               >
-                wwww.conversion-lab-landing-page.vercel.app
+                conversion-lab-landing-page.vercel.app
               </Link>
             </span>
           </li>
@@ -512,13 +512,13 @@ const ProjectDetails = ({ data }: { data: any }) => {
   };
 
   return (
-    <div className="max-w-[76rem] h-screen px-8 pt-[7rem] flex flex-col justify-center items-center m-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+    <div className="max-w-[76rem] min-h-screen flex flex-col justify-center items-center mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-8 py-40">
         <div className="relative w-full h-full overflow-hidden">
           <Image
             src={img}
             alt="Project Image"
-            className="object-cover absolute top-0 left-0"
+            className="object-cover"
             priority
           />
         </div>
@@ -529,7 +529,7 @@ const ProjectDetails = ({ data }: { data: any }) => {
           >
             {description}
           </p>
-          <ul className="">
+          <ul>
             <li className="flex items-center justify-between text-[#aaaaaa] border border-[#ffffff1a] border-t-transparent border-l-transparent border-r-transparent py-2">
               <div className="flex items-center">
                 <span className="text-[#ffffff] text-3xl">

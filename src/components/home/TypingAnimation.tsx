@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import AnimateScroll from "../common/AnimateScroll";
+import { cn } from "@/lib/utils";
 
 const textArray = [
   "WEB DEVELOPER",
@@ -46,10 +48,22 @@ const Typewriter = () => {
   }, [textIndex, charIndex, isDeleting, delay]);
 
   return (
-    <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold z-10">
-      {text}
-      <span className={"animate-blink"}>|</span>
-    </h1>
+    <AnimateScroll triggerOnce>
+      {({ inView, ref }) => {
+        return (
+          <h1
+            ref={ref}
+            className={cn(
+              "text-white text-4xl md:text-5xl lg:text-6xl font-bold z-10 invisible",
+              { "visible animate-fadeInUp delay-500": inView }
+            )}
+          >
+            {text}
+            <span className={"animate-blink"}>|</span>
+          </h1>
+        );
+      }}
+    </AnimateScroll>
   );
 };
 
