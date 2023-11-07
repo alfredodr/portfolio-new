@@ -6,7 +6,7 @@ import img5 from "../../public/paper.jpg";
 import img6 from "../../public/consulting.jpg";
 
 const desc1 =
-  "A landing page built using vanilla HTML, CSS, SASS, Javascript, and then put into production in WordPress. You may find the project on the client's website as a template on all the find an agent pages. It is a fully responsive page that improves user experience with a fresh design and easy-to-understand architecture. It shows client reviews google for each business location and a form to get a free quote and agent details. Feel free to navigate to the page using the button below";
+  "A landing page built using vanilla HTML, CSS, SASS, Javascript, and then put into production in WordPress. You may find the project on the client's website as a template on all the find an agent pages. It is a fully responsive page that improves user experience with a fresh design and easy-to-understand architecture. It shows current client reviews google for each business location, directions, and a form to get a free insurance quote along other office details.";
 const desc2 =
   "A react application that serves quotes from the famous Breaking Bad tv show. You can get a quote, see the recent quotes, archive quotes, and remove quotes.";
 const desc3 =

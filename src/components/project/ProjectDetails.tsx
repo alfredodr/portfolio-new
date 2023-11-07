@@ -399,12 +399,12 @@ const ProjectDetails = ({ data }: { data: any }) => {
             </div>
             <span className="text-[#ffffff] text-3xl">
               <Link
-                href={"https://alfredojdominguez.com.com/"}
+                href={"https://fishingshirtsnow.com/"}
                 passHref
                 target="_blank"
                 className={`text-[#cf1f1f] text-base ${nunito.variable} font-nunito font-normal `}
               >
-                alfredojdominguez.com.com
+                fishingshirtsnow.com
               </Link>
             </span>
           </li>
