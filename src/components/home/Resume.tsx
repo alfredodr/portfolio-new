@@ -2,6 +2,7 @@ import React from "react";
 import { Nunito } from "next/font/google";
 import { cn } from "@/lib/utils";
 import AnimateScroll from "../common/AnimateScroll";
+import Link from "next/link";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -182,33 +183,33 @@ const Resume = () => {
                       </span>
                       <div className="pl-10 pb-10">
                         <span className="gradient_resume h-10 flex items-center text-sm font-normal mb-5">
-                          2014 - 2017
+                          2007 - 2011
                         </span>
                         <span className="mt-5 text-lg font-bold mb-2 block">
-                          Miami Dade College
+                          University of Santi Spiritus José Martí Pérez
                         </span>
                         <span
                           className={`mb-2 block text-base font-bold ${nunito.variable} font-nunito text-[#cf1f1f]`}
                         >
-                          Miami, Florida
+                          Santi Spiritus, Cuba
                         </span>
                         <span
                           className={`text-base font-normal ${nunito.variable} font-nunito text-[#aaaaaa]`}
                         >
-                          Associate in Computer Science
+                          Bachelor&lsquo;s Degree in Computer Science
                         </span>
                       </div>
                     </li>
-                    <li className="text-[#ffffff] border border-[#ffffff33] border-r-transparent border-t-transparent border-b-transparent relative border-l-transparent">
+                    <li className="text-[#ffffff] border border-[#ffffff33] border-r-transparent border-t-transparent border-b-transparent relative">
                       <span className="absolute top-0 -left-5 bg-[#CF1F1F] w-10 h-10 rounded-full flex flex-col items-center justify-evenly p-5">
                         2
                       </span>
                       <div className="pl-10 pb-10">
                         <span className="gradient_resume h-10 flex items-center text-sm font-normal mb-5">
-                          2007 - 2009
+                          2011
                         </span>
                         <span className="mt-5 text-lg font-bold mb-2 block">
-                          University of Santi Spiritus{" "}
+                          University of Santi Spiritus José Martí Pérez
                         </span>
                         <span
                           className={`mb-2 block text-base font-bold ${nunito.variable} font-nunito text-[#cf1f1f]`}
@@ -218,8 +219,30 @@ const Resume = () => {
                         <span
                           className={`text-base font-normal ${nunito.variable} font-nunito text-[#aaaaaa]`}
                         >
-                          Completed over 90 credits towards a Bachelor&lsquo;s
-                          Degree in Computer Science
+                          Summer Intern, Software Developer
+                        </span>
+                      </div>
+                    </li>
+                    <li className="text-[#ffffff] border border-[#ffffff33] border-r-transparent border-t-transparent border-b-transparent relative border-l-transparent">
+                      <span className="absolute top-0 -left-5 bg-[#CF1F1F] w-10 h-10 rounded-full flex flex-col items-center justify-evenly p-5">
+                        3
+                      </span>
+                      <div className="pl-10 pb-10">
+                        <span className="gradient_resume h-10 flex items-center text-sm font-normal mb-5">
+                          2011
+                        </span>
+                        <span className="mt-5 text-lg font-bold mb-2 block">
+                          Bandec Bank
+                        </span>
+                        <span
+                          className={`mb-2 block text-base font-bold ${nunito.variable} font-nunito text-[#cf1f1f]`}
+                        >
+                          Santi-Spiritus, Cuba
+                        </span>
+                        <span
+                          className={`text-base font-normal ${nunito.variable} font-nunito text-[#aaaaaa]`}
+                        >
+                          Analyst, Software Development
                         </span>
                       </div>
                     </li>
@@ -229,6 +252,29 @@ const Resume = () => {
             }}
           </AnimateScroll>
         </div>
+        <AnimateScroll triggerOnce>
+          {({ inView, ref }) => {
+            return (
+              <div
+                ref={ref}
+                className={cn("flex items-center justify-center invisible", {
+                  "visible animate-fadeInUp": inView,
+                })}
+              >
+                <Link
+                  id="download_resume"
+                  className="bg-[#cf1f1f] py-3 px-7 text-[#fff] text-sm font-bold cursor-pointer  md:col-start-2 hover:shadow-[2px_2px_20px_0px_rgba(207,31,31,0.5)]"
+                  href={"/resume.pdf"}
+                  target="_blank"
+                  rel="noreferrer"
+                  download="Alfredo J Dominguez Resume"
+                >
+                  Download Resume
+                </Link>
+              </div>
+            );
+          }}
+        </AnimateScroll>
       </div>
     </section>
   );

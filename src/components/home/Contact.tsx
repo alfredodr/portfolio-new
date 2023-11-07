@@ -43,6 +43,12 @@ export interface FormInputs {
   message: string;
 }
 
+declare global {
+  interface Window {
+    dataLayer: any;
+  }
+}
+
 const Contact = () => {
   const {
     register,
@@ -89,6 +95,14 @@ const Contact = () => {
         if (res?.status === "Ok") {
           setMsgStatus(true);
           setOpen(true);
+          if (typeof window !== "undefined") {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              event: "contactFormSubmission",
+              formType: "Contact us",
+              formPosition: "Contact us section",
+            });
+          }
         } else {
           setMsgStatus(false);
           setOpen(false);
@@ -145,7 +159,10 @@ const Contact = () => {
                 })}
                 onSubmit={handleSubmit(submitForm)}
               >
-                <form className="grid grid-cols-1 md:grid-cols-3 gap-5 z-10">
+                <form
+                  id="contact_me"
+                  className="grid grid-cols-1 md:grid-cols-3 gap-5 z-10"
+                >
                   <div>
                     <input
                       type="text"
