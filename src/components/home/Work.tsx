@@ -55,7 +55,7 @@ const Work = () => {
                       </span>
 
                       <h3 className="text-[#ffffff] text-2xl font-bold ml-5">
-                        Front End
+                        Frontend
                       </h3>
                     </div>
                     <p

@@ -1,10 +1,43 @@
 import React from "react";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import AnimateScroll from "../common/AnimateScroll";
 
 const Portfolio = () => {
+  const router = useRouter();
+
+  // set scroll restoration to manual
+  useEffect(() => {
+    if (
+      "scrollRestoration" in history &&
+      history.scrollRestoration !== "manual"
+    ) {
+      history.scrollRestoration = "manual";
+    }
+  }, []);
+
+  // handle and store scroll position
+  useEffect(() => {
+    const handleRouteChange = () => {
+      sessionStorage.setItem("scrollPosition", window.scrollY.toString());
+    };
+    router.events.on("routeChangeStart", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeStart", handleRouteChange);
+    };
+  }, [router.events]);
+
+  // restore scroll position
+  useEffect(() => {
+    if ("scrollPosition" in sessionStorage) {
+      window.scrollTo(0, Number(sessionStorage.getItem("scrollPosition")));
+      sessionStorage.removeItem("scrollPosition");
+    }
+  }, []);
+
   return (
     <section id="section-portfolio" className="bg-[#191A1C]">
       <div className="max-w-[76rem] px-8 py-20 mx-auto">

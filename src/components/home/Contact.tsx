@@ -63,6 +63,7 @@ const Contact = () => {
   const [open, setOpen] = useState<boolean>(false);
   const { executeRecaptcha } = useGoogleReCaptcha();
   const [responseMsg, setResponseMsg] = useState<string>("");
+  const [loading, setLoading] = useState(false);
 
   const submitForm = useCallback(
     (data: FormInputs) => {
@@ -77,6 +78,7 @@ const Contact = () => {
   );
 
   const submitInquiry = async (gReCaptchaToken: any, data: FormInputs) => {
+    setLoading(true);
     fetch("/api/mail", {
       method: "POST",
       headers: {
@@ -95,6 +97,7 @@ const Contact = () => {
         if (res?.status === "Ok") {
           setMsgStatus(true);
           setOpen(true);
+          setLoading(false);
           if (typeof window !== "undefined") {
             window.dataLayer = window.dataLayer || [];
             window.dataLayer.push({
@@ -106,6 +109,7 @@ const Contact = () => {
         } else {
           setMsgStatus(false);
           setOpen(false);
+          setLoading(false);
         }
       });
   };
@@ -223,7 +227,11 @@ const Contact = () => {
                   </div>
                   <button
                     type="submit"
-                    className="bg-[#cf1f1f] py-3 px-7 text-[#fff] text-sm font-bold cursor-pointer mx-auto md:col-start-2 hover:shadow-[2px_2px_20px_0px_rgba(207,31,31,0.5)]"
+                    disabled={loading}
+                    className={cn(
+                      "bg-[#cf1f1f] py-3 px-7 text-[#fff] text-sm font-bold cursor-pointer mx-auto md:col-start-2 hover:shadow-[2px_2px_20px_0px_rgba(207,31,31,0.5)]",
+                      { "opacity-50": loading }
+                    )}
                   >
                     Send Message
                   </button>
