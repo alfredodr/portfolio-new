@@ -156,7 +156,7 @@ const About = () => {
                 >
                   <BiLogoTypescript style={{ fontSize: 40 }} />
                   <h3 className="text-xl font-bold text-[#ffffff]">
-                    TypesCript
+                    TypeScript
                   </h3>
                 </span>
               );
